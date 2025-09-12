@@ -26,12 +26,12 @@ const Header = () => {
 
   return (
     <>
-      <motion.header 
-        className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <motion.header
+  className="fixed w-full z-50 bg-white shadow-md py-4 transition-all duration-300"
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.5 }}
+>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full flex items-center justify-center">

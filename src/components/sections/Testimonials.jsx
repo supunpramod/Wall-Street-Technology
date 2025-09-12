@@ -24,7 +24,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-light">
+    <section className="py-20 bg-light mt-6">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2 

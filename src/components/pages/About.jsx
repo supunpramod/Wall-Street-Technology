@@ -39,7 +39,7 @@ const About = () => {
       transition={{ duration: 0.5 }}
       className="pt-24 pb-16"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mt-6">
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h1 
