@@ -6,7 +6,7 @@ import About from './components/pages/About';
 import Services from './components/sections/Services';
 import Industries from './components/sections/Industries';
 import Technologies from './components/sections/Technologies';
-import CTA from './components/sections/CTA';
+
 import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
 
@@ -23,7 +23,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/technologies" element={<Technologies />} />
-            <Route path="/csr" element={<CTA />} />
+           
              
             <Route path="*" element={<NotFound />} />
           </Routes>

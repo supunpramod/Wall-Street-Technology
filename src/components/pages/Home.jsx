@@ -4,7 +4,7 @@ import Services from '../sections/Services';
 import Industries from '../sections/Industries';
 import Technologies from '../sections/Technologies';
 import Testimonials from '../sections/Testimonials';
-import CTA from '../sections/CTA';
+
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Industries />
       <Technologies />
       <Testimonials />
-      <CTA />
+    
     </motion.div>
   );
 };
