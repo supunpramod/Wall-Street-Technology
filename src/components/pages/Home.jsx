@@ -3,7 +3,7 @@ import Hero from '../sections/Hero';
 import Services from '../sections/Services';
 import Industries from '../sections/Industries';
 import Technologies from '../sections/Technologies';
-import Testimonials from '../sections/Testimonials';
+
 
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
       <Services />
       <Industries />
       <Technologies />
-      <Testimonials />
+   
     
     </motion.div>
   );

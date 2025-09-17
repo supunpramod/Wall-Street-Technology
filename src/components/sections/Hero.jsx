@@ -81,6 +81,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
+            <Link to="/services">
               <Button
     size="lg"
     variant="secondary"
@@ -88,6 +89,7 @@ const Hero = () => {
   >
     Our Services
   </Button>
+  </Link>
 
   <Link to="/contact">
     <Button
