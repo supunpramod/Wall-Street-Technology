@@ -91,7 +91,7 @@ const Technologies = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <div className="bg-white rounded-xl p-6 md:p-8 max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl p-6 md:p-8  w-full">
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary">Technology Expertise</h3>
             <p className="text-gray-600 mb-6">
               Our team stays updated with the latest technology trends to ensure we deliver modern, efficient, and future-proof solutions. We continuously evaluate and adopt new technologies that bring value to our clients.
