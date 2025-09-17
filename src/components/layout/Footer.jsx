@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Logo1 from '../../assets/logo1.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
   const footerLinks = [
@@ -64,17 +67,26 @@ const Footer = () => {
               Leading IT services and consulting company dedicated to helping businesses accelerate digital transformation.
             </p>
             <div className="flex space-x-3 md:space-x-4">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a 
-                  key={social} 
-                  href="#" 
-                  className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary transition-colors duration-300"
-                  aria-label={social}
-                >
-                  <div className="w-4 h-4 md:w-5 md:h-5 bg-gray-400 rounded-full"></div>
-                </a>
-              ))}
-            </div>
+  {[
+    { name: "facebook", icon: faFacebookF, url: "#" },
+    { name: "twitter", icon: faTwitter, url: "#" },
+    { name: "linkedin", icon: faLinkedinIn, url: "#" },
+    { name: "instagram", icon: faInstagram, url: "#" },
+  ].map((social) => (
+    <a
+      key={social.name}
+      href={social.url}
+      className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-secondary transition-colors duration-300 "
+      aria-label={social.name}
+    >
+      <FontAwesomeIcon
+        icon={social.icon}
+        className="text-gray-400 w-4 h-4 md:w-5 md:h-5"
+      />
+    </a>
+  ))}
+</div>
+
           </div>
 
           {footerLinks.map((section) => (
