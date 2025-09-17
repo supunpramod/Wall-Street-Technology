@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Logo1 from '../../assets/logo1.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,11 +35,11 @@ const Header = () => {
 >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm md:text-xl">WS</span>
-            </div>
+            
+              <img src={Logo1} alt="Logo" className="w-10 h-10 md:w-10 md:h-10" />
+            
             <span className="font-bold text-lg md:text-xl text-primary hidden sm:block">Wall Street Technology</span>
-            <span className="font-bold text-lg md:text-xl text-primary sm:hidden">WST</span>
+            <span className="font-bold text-lg md:text-xl text-primary sm:hidden">Wall Street Technology</span>
           </Link>
 
           {/* Desktop Navigation */}

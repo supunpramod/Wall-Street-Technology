@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Logo1 from '../../assets/logo1.png';
 
 const Footer = () => {
   const footerLinks = [
@@ -54,10 +55,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-secondary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm md:text-xl">WS</span>
-              </div>
-              <span className="font-bold text-lg md:text-xl">Wall Street Technology</span>
+              
+                  <img src={Logo1} alt="Logo" className="w-10 h-10 md:w-10 md:h-10" />
+              
+              <span className="font-bold text-lg md:text-xl text-primary">Wall Street Technology</span>
             </div>
             <p className="mb-6 text-sm md:text-base max-w-md">
               Leading IT services and consulting company dedicated to helping businesses accelerate digital transformation.
