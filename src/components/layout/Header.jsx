@@ -45,11 +45,11 @@ const Header = () => {
               whileTap={{ scale: 0.95 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className=""></div>
               <img 
                 src={Logo1} 
                 alt="Wall Street Technology Logo" 
-                className="relative w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-white shadow-lg"
+                className="relative w-12 h-12 md:w-14 md:h-14 rounded-full   "
               />
             </motion.div>
             <div className="flex flex-col">
