@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import { useEffect, useState } from "react";
+import bgImage from "../../assets/hero.jpg";
 
 // ✅ Counter Component
 const Counter = ({ from = 0, to, duration = 2 }) => {
@@ -41,65 +42,103 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-secondary text-white pt-24 pb-20 md:pt-32 md:pb-28 lg:pt-40 lg:pb-32">
-      {/* Background Decorations */}
+    <section className="relative text-white pt-24 pb-20 md:pt-32 md:pb-28 lg:pt-40 lg:pb-32 min-h-screen flex items-center">
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[500px] h-[500px] bg-accent/30 rounded-full blur-3xl top-[-100px] left-[-150px]" />
-        <div className="absolute w-[400px] h-[400px] bg-secondary/30 rounded-full blur-3xl bottom-[-120px] right-[-100px]" />
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat contrast-100"
+          style={{
+            backgroundImage: `url(${bgImage})`,
+          }}
+        />
+        
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/60 to-transparent" />
+        
+        {/* Additional Decorations */}
+        <div className="absolute w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl top-[-100px] left-[-150px]" />
+        <div className="absolute w-[400px] h-[400px] bg-secondary/20 rounded-full blur-3xl bottom-[-120px] right-[-100px]" />
       </div>
 
-      <div className="container mx-auto px-6">
-        {/* Headline */}
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 leading-tight tracking-tight"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Accelerate Your{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-pink-400">
-              Digital Transformation
-            </span>{" "}
-            Journey
-          </motion.h1>
-
-          <motion.p
-            className="text-lg md:text-xl lg:text-2xl mb-10 max-w-2xl mx-auto text-white/90"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Custom software solutions, cloud services, and IT consulting to drive
-            your business forward with innovation and scalability.
-          </motion.p>
-
-          {/* CTA Buttons */}
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Text Content */}
           <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            className="lg:pr-8"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            <Link to="/services">
-              <Button
-    size="lg"
-    variant="secondary"
-    className="px-8 py-4 text-lg rounded-xl border-white  hover:shadow-accent/40 transition w-full sm:w-auto "
-  >
-    Our Services
-  </Button>
-  </Link>
+            <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 leading-tight tracking-tight"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              Accelerate Your{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-pink-400">
+                Digital Transformation
+              </span>{" "}
+              Journey
+            </motion.h1>
 
-  <Link to="/contact">
-    <Button
-      size="lg"
-      variant="outline"
-      className="px-8 py-4 text-lg rounded-xl border-white text-white  hover:text-primary transition w-full sm:w-auto"
-    >
-      Contact Us
-    </Button>
-            </Link>
+            <motion.p
+              className="text-lg md:text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Custom software solutions, cloud services, and IT consulting to drive
+              your business forward with innovation and scalability.
+            </motion.p>
+
+            {/* CTA Buttons */}
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 mb-8"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <Link to="/services">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="px-8 py-4 text-lg rounded-xl border-white hover:shadow-accent/40 transition w-full sm:w-auto bg-primary hover:bg-primary/90"
+                >
+                  Our Services
+                </Button>
+              </Link>
+
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="px-8 py-4 text-lg rounded-xl border-2 border-white text-white hover:bg-white hover:text-primary transition w-full sm:w-auto backdrop-blur-sm"
+                >
+                  Contact Us
+                </Button>
+              </Link>
+            </motion.div>
+
+            {/* Additional Info */}
+           
+          </motion.div>
+
+          {/* Right Side - Could be used for an image or left empty */}
+          <motion.div
+            className="hidden lg:flex items-center justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            {/* Optional: Add a tech illustration or image here */}
+            <div className="w-full h-96 bg-transparent rounded-lg flex items-center justify-center">
+              {/* You can add an image or illustration here */}
+              <div className="text-white/40 text-center">
+                {/* Optional placeholder for right side content */}
+              </div>
+            </div>
           </motion.div>
         </div>
 
@@ -109,22 +148,25 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
           <div className="relative w-full max-w-5xl">
-            <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl shadow-xl p-5 md:p-5  border border-white/20 mt-[-50px] ">
+            <div className="relative bg-white/20 backdrop-blur-lg rounded-3xl shadow-xl p-6 md:p-8 border border-white/30">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
                 {stats.map((stat, index) => (
                   <motion.div
                     key={index}
-                    className="text-center p-3"
-                    whileHover={{ scale: 1.08 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    className="text-center p-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                   >
                     <div className="text-3xl md:text-4xl font-extrabold text-accent drop-shadow mb-2">
                       <Counter to={stat.value} duration={2} />
                     </div>
-                    <div className="text-sm md:text-base text-white/80">
+                    <div className="text-sm md:text-base text-white/80 font-medium">
                       {stat.label}
                     </div>
                   </motion.div>
