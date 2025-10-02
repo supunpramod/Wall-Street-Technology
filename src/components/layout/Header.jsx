@@ -40,7 +40,7 @@ const Header = () => {
         style={{
           background: isScrolled 
             ? `${theme.light}CC` // light color with 80% opacity
-            : `linear-gradient(to right, ${theme.light}, ${theme.accent})`,
+            : `linear-gradient(to right, ${theme.accent}, ${theme.accent})`,
           backdropFilter: isScrolled ? 'blur(10px)' : 'none'
         }}
         initial={{ y: -100 }}

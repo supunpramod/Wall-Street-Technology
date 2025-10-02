@@ -48,7 +48,7 @@ const Footer = () => {
 
   return (
     <motion.footer 
-      className="bg-dark text-white pt-12 md:pt-16 pb-8"
+      className="bg-accent text-dark pt-12 md:pt-16 pb-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -97,7 +97,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link 
                       to={link.path}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                      className="text-dark hover:text-white transition-colors duration-300 text-sm"
                     >
                       {link.name}
                     </Link>
@@ -108,7 +108,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-t border-gray-800 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-800 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-dark text-sm">
           <p>&copy; {new Date().getFullYear()} Wall Street Technology Pvt. Ltd. All rights reserved.</p>
         </div>
       </div>
