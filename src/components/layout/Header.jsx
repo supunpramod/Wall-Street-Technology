@@ -49,7 +49,7 @@ const Header = () => {
               <img 
                 src={Logo1} 
                 alt="Wall Street Technology Logo" 
-                className="relative w-12 h-12 md:w-14 md:h-14 rounded-full   "
+                className="relative w-12 h-12 md:w-14 md:h-14 rounded-full transition-all duration-300 "
               />
             </motion.div>
             <div className="flex flex-col">
