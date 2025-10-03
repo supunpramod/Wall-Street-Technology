@@ -48,7 +48,7 @@ const Footer = () => {
 
   return (
     <motion.footer 
-      className="bg-accent text-dark pt-12 md:pt-16 pb-8"
+      className="bg-accent text-dark pt-12 md:pt-16 pb-8 border-t-2 border-primary"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

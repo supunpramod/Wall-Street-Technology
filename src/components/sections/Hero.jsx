@@ -257,7 +257,7 @@ const Hero = () => {
 
         {/* Stats Section with Counter */}
         <motion.div
-          className="mt-16 md:mt-20 flex justify-center"
+          className="mt-16 md:mt-22 flex justify-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'shadow-2xl py-2' : 'shadow-lg py-4'}`}
+        className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'shadow-2xl py-2' : 'shadow-lg py-3'}`}
         style={{
           background: isScrolled 
             ? `${theme.light}CC` // light color with 80% opacity
