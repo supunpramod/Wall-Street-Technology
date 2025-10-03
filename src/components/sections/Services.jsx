@@ -85,9 +85,7 @@ const Services = () => {
                   </ul>
                 </div>
                 <div className="px-4 md:px-6 pb-4 md:pb-6">
-                  <Button variant="ghost" className="w-full justify-start text-sm md:text-base p-2">
-                    Learn More
-                  </Button>
+                  
                 </div>
               </Card>
             </motion.div>
@@ -101,9 +99,9 @@ const Services = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Button size="lg" variant="primary" className="w-full md:w-auto">
+          {/* <Button size="lg" variant="primary" className="w-full md:w-auto">
             View All Services
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>
