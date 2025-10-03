@@ -210,7 +210,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             Accelerate Your{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-pink-400">
+            <span className="bg-clip-text text-transparent bg-secondary">
               Digital Transformation
             </span>{" "}
             Journey
