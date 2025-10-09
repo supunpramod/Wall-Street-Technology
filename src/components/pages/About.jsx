@@ -48,7 +48,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            About <span className="text-primary">Wall Street Technology</span>
+            About <span className="text-primary">Us</span>
           </motion.h1>
           
           <motion.p 

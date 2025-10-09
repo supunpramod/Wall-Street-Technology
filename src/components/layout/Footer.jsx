@@ -61,7 +61,7 @@ const Footer = () => {
               
                   <img src={Logo1} alt="Logo" className="w-10 h-10 md:w-10 md:h-10" />
               
-              <span className="font-bold text-lg md:text-xl text-primary">Wall Street Technology</span>
+              <span className="font-bold text-lg md:text-xl text-primary">Techtwo Bee</span>
             </div>
             <p className="mb-6 text-sm md:text-base max-w-md">
               Leading IT services and consulting company dedicated to helping businesses accelerate digital transformation.
@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-dark text-sm">
-          <p>&copy; {new Date().getFullYear()} Wall Street Technology Pvt. Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Techtwo Bee Pvt. Ltd. - Designed & Developed by Supun Pramod</p>
         </div>
       </div>
     </motion.footer>

@@ -70,10 +70,10 @@ const Header = () => {
                   color: 'transparent'
                 }}
               >
-                Wall Street
+                Techtwo Bee
               </span>
               <span className="text-xs md:text-sm font-medium -mt-1" style={{ color: theme.dark }}>
-                Technology
+                
               </span>
             </div>
           </Link>
