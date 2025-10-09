@@ -39,7 +39,7 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="pt-20 pb-12 md:pt-24 md:pb-16"
+      className="pt-20 pb-12 md:pt-24 md:pb-16 mt-5"
     >
       <div className="container mx-auto px-4">
         {/* Hero Section */}

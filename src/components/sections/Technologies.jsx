@@ -32,7 +32,7 @@ const Technologies = () => {
 
   return (
     <section className="py-16 md:py-20 bg-light mt-6">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mt-5">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <motion.h2 
             className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4"
