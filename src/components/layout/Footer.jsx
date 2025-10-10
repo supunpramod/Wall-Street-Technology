@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-dark text-sm">
-          <p>&copy; {new Date().getFullYear()} Techtwo Bee Pvt. Ltd. - Designed & Developed by Supun Pramod</p>
+          <p>&copy; {new Date().getFullYear()} Techtwo Bee Pvt. Ltd. - Designed & Developed by Supun Pramod (Techtwo Bee Team)</p>
         </div>
       </div>
     </motion.footer>
